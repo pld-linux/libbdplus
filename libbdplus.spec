@@ -5,12 +5,12 @@
 Summary:	BD+ support library for Blu-ray playback
 Summary(pl.UTF-8):	Biblioteka obsługująca BD+ w celu odtwarzania płyt Blu-ray
 Name:		libbdplus
-Version:	0.1.2
+Version:	0.2.0
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://download.videolan.org/videolan/libbdplus/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	f1ad1c67943d81e1e2e3ab1c1a8f3ebb
+Source0:	https://download.videolan.org/videolan/libbdplus/%{version}/%{name}-%{version}.tar.bz2
+# Source0-md5:	7ae45244ba48790c2534df6ffad0c4bb
 URL:		http://www.videolan.org/developers/libbdplus.html
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
@@ -85,7 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README.txt
+%doc ChangeLog README.md
 %attr(755,root,root) %{_libdir}/libbdplus.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libbdplus.so.0
 
